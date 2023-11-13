@@ -102,3 +102,7 @@ Number
 | 10.3 | Количество                         | 10-03 Quantity                       |
 | 10.4 | Цена                               | 10-04 Price                          |
 | 10.5 | Сумма                              | 10-05 Amount                         |
+
+## Как отправить pull request (Contribute)
+
+Please follow [CONTRIBUTING.md](CONTRIBUTING.md).

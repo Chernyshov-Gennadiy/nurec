@@ -1,4 +1,4 @@
-# Test System (Neural universit recognition check)
+# Test System (Neural university recognition check)
 
 ## Colab Examples
 
@@ -56,8 +56,8 @@ Number
   "02 Receipt Date": "",
   "04 Counterparty": [
     {
-      "04-01 Counterparty Name": "",
-      "04-02 Counterparty BIN": ""
+      "04-01 Name": "",
+      "04-02 BIN": ""
     }
   ],
   "05 Contract": "",
@@ -86,8 +86,8 @@ Number
 | 1    | Номер Счета                        | 01 Receipt Number                    |
 | 2    | Дата Счета                         | 02 Receipt Date                      |
 | 4    | БИН и наименование Контрагента     | 04 Counterparty                      |
-| 4.1  | Наименование Контрагента           | 04-01 Counterparty Name              |
-| 4.2  | БИН Контрагента                    | 04-02 Counterparty BIN               |
+| 4.1  | Наименование Контрагента           | 04-01 Name                           |
+| 4.2  | БИН Контрагента                    | 04-02 BIN                            |
 | 5    | Договор                            | 05 Contract                          |
 | 6    | БИН Нашей организации              | 06 Our Company BIN                   |
 | 7    | БИК банка Контрагента              | 07 Counterparty Bank BIC             |

@@ -51,35 +51,43 @@ Number
 
 ```json
 {
- "File Name": "",
-    "01 Receipt": "",
-    "04-01 Counterparty 1": "",
-    "04-02 Counterparty 2": "",
-    "05 Contract": "",
-    "06 Our Company BIN": "",
-    "07 Counterparty Bank BIC": "",
-    "08 Counterparty Current Account IIC": "",
-    "09 Counterparty Payment Purpose Code": "",
-    "10 Items Table": [
-        {
-            "10-01 Item": "",
-            "10-02 Unit": "",
-            "10-03 Quantity": "",
-            "10-04 Price": "",
-            "10-05 Amount": ""
-        },
-    ]
+  "File Name": "",
+  "01 Receipt": "",
+  "02 Receipt Date": "",
+  "04 Counterparty": [
+    {
+      "04-01 Counterparty Name": "",
+      "04-02 Counterparty BIN": ""
+    }
+  ],
+  "05 Contract": "",
+  "06 Our Company BIN": "",
+  "07 Counterparty Bank BIC": "",
+  "08 Counterparty Current Account IIC": "",
+  "09 Counterparty Payment Purpose Code": "",
+  "10 Items Table": [
+    {
+      "10-01 Item": "",
+      "10-02 Unit": "",
+      "10-03 Quantity": "",
+      "10-04 Price": "",
+      "10-05 Amount": ""
+    }
+  ]
 }
 ```
+
 ## Params Table
 
 [Params Table (Google Disc)](https://docs.google.com/spreadsheets/d/14AIRNzPu7_TQo_VaDG64RQo2k1brj8DDg_k--Eqtkzk/edit#gid=0)
 
 | №    | Описание                           | Название поля                        |
 | ---- | ---------------------------------- | ------------------------------------ |
-| 1    | Номер и Дата Счета                 | 01 Receipt                           |
-| 4.1  | БИН и наименование Контрагента 1   | 04-01 Counterparty 1                 |
-| 4.2  | БИН и наименование Контрагента 2   | 04-02 Counterparty 2                 |
+| 1    | Номер Счета                        | 01 Receipt Number                    |
+| 2    | Дата Счета                         | 02 Receipt Date                      |
+| 4    | БИН и наименование Контрагента     | 04 Counterparty                      |
+| 4.1  | Наименование Контрагента           | 04-01 Counterparty Name              |
+| 4.2  | БИН Контрагента                    | 04-02 Counterparty BIN               |
 | 5    | Договор                            | 05 Contract                          |
 | 6    | БИН Нашей организации              | 06 Our Company BIN                   |
 | 7    | БИК банка Контрагента              | 07 Counterparty Bank BIC             |

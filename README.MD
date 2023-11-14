@@ -62,8 +62,12 @@ Number
   ],
   "05 Contract": "",
   "06 Our Company BIN": "",
-  "07 Counterparty Bank BIC": "",
-  "08 Counterparty Current Account IIC": "",
+  "07 Counterparty Bank": [
+    {
+      "07-01 Bank BIC": "",
+      "07-02 Current Account IIC": ""
+    }
+  ],
   "09 Counterparty Payment Purpose Code": "",
   "10 Items Table": [
     {
@@ -85,13 +89,14 @@ Number
 | ---- | ---------------------------------- | ------------------------------------ |
 | 1    | Номер Счета                        | 01 Receipt Number                    |
 | 2    | Дата Счета                         | 02 Receipt Date                      |
-| 4    | БИН и наименование Контрагента     | 04 Counterparty                      |
+| 4    | Контрагент                         | 04 Counterparty                      |
 | 4.1  | Наименование Контрагента           | 04-01 Name                           |
 | 4.2  | БИН Контрагента                    | 04-02 BIN                            |
 | 5    | Договор                            | 05 Contract                          |
 | 6    | БИН Нашей организации              | 06 Our Company BIN                   |
-| 7    | БИК банка Контрагента              | 07 Counterparty Bank BIC             |
-| 8    | Расчетный счет (ИИК) Контрагента   | 08 Counterparty Current Account IIC  |
+| 7    | Банк Контрагента                   | 07 Counterparty Bank                 |
+| 7.1  | БИК банка Контрагента              | 07-01 Bank BIC                       |
+| 7.2  | Расчетный счет (ИИК) Контрагента   | 07-02 Current Account IIC            |
 | 9    | Код назначения платежа Контрагента | 09 Counterparty Payment Purpose Code |
 | 10   | Информация из табличной части:     | 10 Items Table                       |
 | 10.1 | Наименование товара                | 10-01 Item                           |

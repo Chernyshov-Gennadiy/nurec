@@ -52,7 +52,7 @@ Number
 ```json
 {
   "File Name": "",
-  "01 Receipt": "",
+  "01 Receipt Number": "",
   "02 Receipt Date": "",
   "04 Counterparty": [
     {

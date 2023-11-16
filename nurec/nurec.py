@@ -14,7 +14,7 @@ class Nurec:
     for data in self.recognized_data:
       file_name = data["File Name"]
       module_dir = os.path.dirname(os.path.abspath(__file__))
-      yaml_file_path = os.path.join(module_dir, 'verification', f"{file_name}.yaml")
+      yaml_file_path = os.path.join(module_dir, 'images', f"{file_name}.yaml")
 
       with open(yaml_file_path, 'r') as f:
         yaml_data = yaml.safe_load(f)

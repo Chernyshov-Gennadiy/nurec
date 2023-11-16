@@ -9,6 +9,6 @@ setup(
   packages=find_packages(),
   install_requires=[line.strip() for line in open("requirements.txt").readlines()],
   package_data={
-    'nurec': ['verification/*', 'images/*']
+    'nurec': ['images/*']
   }
 )

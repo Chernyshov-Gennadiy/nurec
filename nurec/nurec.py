@@ -9,8 +9,7 @@ class Nurec:
     self.mismatched_chars = 0
     self.details_list = []
     self.load_yaml_and_compare()
-    self.HOME = os.getcwd()                                   # назначение репозитория 
-
+    
   def load_yaml_and_compare(self):
     for data in self.recognized_data:
       file_name = data["File Name"]
@@ -69,13 +68,10 @@ class Nurec:
     return self.mismatched_chars
   
   def get_image_paths(self):                                                                # Определение метода класса get_image_paths # "Image"
-      image_folder = f'{self.HOME}\\nurec\\images'                                          # Путь к папке с изображениями
-      image_paths = []                                                                      # Список для хранения полных путей до изображений
-
-      for root, dirs, files in os.walk(image_folder):                                       # Обход всех файлов и папок внутри image_folder
-          for file in files:                                                                # Обход всех файлов
-              if file.endswith(".jpg") or file.endswith(".jpeg") or file.endswith(".png"):  # Проверка, является ли файл изображением
-                  image_path = os.path.join(root, file)                                     # Формирование полного пути до файла
-                  image_paths.append(image_path)                                            # Добавление пути в список
-
-      return image_paths                                                                    # Возврат списка с полными путями до изображений
+     
+      for data in self.recognized_data:
+        file_name = data["File Name"]
+        module_dir = os.path.dirname(os.path.abspath(__file__))
+        png_file_path = os.path.join(module_dir, 'images', f"{file_name}.png")
+        
+      return png_file_path                                                                    # Возврат списка с полными путями до изображений

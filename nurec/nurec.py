@@ -69,8 +69,9 @@ class Nurec:
 
   def get_image_paths(self):                                                                # Определение метода класса get_image_paths # "Image"
       image_paths = []                                                                      # Список для хранения полных путей до изображений
-      module_dir = os.path.dirname(os.path.abspath())                               # 
-      print(module_dir)
+      rep_name = os.getcwd()
+      module_dir = os.path.dirname(rep_name)                               # 
+      #print(module_dir)
       for root, dirs, files in os.walk(module_dir):                                         # Обход всех файлов и папок внутри image_folder
           for file in files:                                                                # Обход всех файлов
               if file.endswith(".jpg") or file.endswith(".jpeg") or file.endswith(".png"):  # Проверка, является ли файл изображением

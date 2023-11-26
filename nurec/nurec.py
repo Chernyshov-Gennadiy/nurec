@@ -1,5 +1,5 @@
 import yaml
-import os
+import os, glob
 import Levenshtein
 
 class Nurec:
@@ -67,15 +67,10 @@ class Nurec:
   def total_distance(self):
     return self.mismatched_chars
 
-  def get_image_paths(self):                                                                # Определение метода класса get_image_paths # "Image"
-      image_paths = []                                                                      # Список для хранения полных путей до изображений
+  def get_image_paths(self):                                # Определение метода класса get_image_paths # "Image"
       rep_name = os.getcwd()
-      module_dir = os.path.dirname(rep_name)                               # 
-      #print(module_dir)
-      for root, dirs, files in os.walk(module_dir):                                         # Обход всех файлов и папок внутри image_folder
-          for file in files:                                                                # Обход всех файлов
-              if file.endswith(".jpg") or file.endswith(".jpeg") or file.endswith(".png"):  # Проверка, является ли файл изображением
-                  image_path = os.path.join(root, file)                                     # Формирование полного пути до файла
-                  image_paths.append(image_path)                                            # Добавление пути в список
-
-      return image_paths                                                                    # Возврат списка с полными путями до изображений
+      image_paths = [
+                    os.path.join(rep_name, 'images', fname) 
+                    for fname in glob(".png") + glob(".jpg") 
+                    ]
+      return image_paths                                    # Возврат списка с полными путями до изображений
